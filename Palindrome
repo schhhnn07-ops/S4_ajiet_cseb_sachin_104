@@ -1,0 +1,25 @@
+class Main {
+    public static void main(String[] args) {
+        Scanner s =new Scanner(System.in);
+        
+        int a,rev = 0;
+        System.out.println("give me a number sequence");
+        a=s.nextInt();
+        int original= a;
+        while(a!=0){
+            int digit=a%10;
+            rev=rev*10+digit;
+            a=a/10;
+        }
+        
+        System.out.println("reversed number is"+rev);
+        if(original==rev){
+            System.out.println(original +"is a palidrome");
+        }
+        else
+        {
+            System.out.println(original+"is not a palidrome");
+        }
+        
+    }
+}
