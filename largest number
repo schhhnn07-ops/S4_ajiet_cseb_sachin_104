@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a, b, c, largest;
+        System.out.println("Enter three numbers:");
+        a = s.nextInt();
+        b = s.nextInt();
+        c = s.nextInt();
+        largest = a;
+        if (b > largest) {
+            largest = b;
+        }
+        if (c > largest) {
+            largest = c;
+        }
+        System.out.println("Largest number is: " + largest);
+    }
+}
