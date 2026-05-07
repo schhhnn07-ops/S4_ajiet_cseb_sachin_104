@@ -1,0 +1,18 @@
+class Main {
+    public static void main(String[] args) {
+            Scanner s= new Scanner(System.in);
+        System.out.println("enter the value of a.");
+        int a=s.nextInt();
+        System.out.println("enter the value of b");
+        int b=s.nextInt();
+        if(a>b){
+            System.out.println("a is greater and value"+a);
+        }
+        else
+        {
+            System.out.println("b is graeter and value"+b);
+        }
+        s.close();
+        }
+    
+}
